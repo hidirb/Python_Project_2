@@ -7,15 +7,15 @@ players = copy.deepcopy(constants.PLAYERS)
 
 __name__
 
-x = players
+y = players
 
 
-for char in x:
+for char in y:
     char['height'] = char['height'].replace(' inches', '')
     char['height'] = int(char['height'])
 
 
-for char in x:
+for char in y:
     char['guardians'] = char['guardians'].replace(" and ", ', ')
     char['guardians'] = ''.join(char['guardians'])
 
@@ -29,8 +29,6 @@ for player in players:
     else:
         player['experience'] = False
         
-
-
 
 
 print('\nHere are your choices: \n1) Display Team Stats \n2) Quit')
@@ -49,31 +47,31 @@ option2 = input('\nEnter an option > ')
 total_players = int(len(players) / len(teams))
 
 
-p = 0
+pn = 0
 player_names = []
 
-h = 0
+hl = 0
 heights_list = []
 
-e=0
+pe=0
 players_experience = []
 
-g=0
+gl=0
 guardians_list = []
 
 while option2 == '1':
-    player_names.append(players[p]['name'])
-    p += 1
+    player_names.append(players[pn]['name'])
+    pn += 1
 
-    heights_list.append(players[h]['height'])
-    h +=1
+    heights_list.append(players[hl]['height'])
+    hl +=1
 
-    players_experience.append(players[e]['experience'])
-    e += 1
+    players_experience.append(players[pe]['experience'])
+    pe += 1
 
-    guardians_list.append(players[g]['guardians'])
-    g += 1
-    if g==6:
+    guardians_list.append(players[gl]['guardians'])
+    gl += 1
+    if gl==6:
         break
                    
 
@@ -89,24 +87,23 @@ if option2 == '1':
 
 
 
-
-p = 6
-h = 6
-e = 6
-g = 6
+pn = 6
+hl = 6
+pe = 6
+gl = 6
 while option2 == '2':
-    player_names.append(players[p]['name'])
-    p += 1
+    player_names.append(players[pn]['name'])
+    pn += 1
     
-    heights_list.append(players[h]['height'])
-    h +=1
+    heights_list.append(players[hl]['height'])
+    hl +=1
 
-    players_experience.append(players[e]['experience'])
-    e += 1
+    players_experience.append(players[pe]['experience'])
+    pe += 1
 
-    guardians_list.append(players[g]['guardians'])
-    g += 1
-    if g==12:
+    guardians_list.append(players[gl]['guardians'])
+    gl += 1
+    if gl==12:
         break   
     
 
@@ -122,24 +119,23 @@ if option2 == '2':
 
 
 
-
-p = 12
-h = 12
-e = 12
-g = 12
+pn = 12
+hl = 12
+pe = 12
+gl = 12
 while option2 == '3':
-    player_names.append(players[p]['name'])
-    p += 1
+    player_names.append(players[pn]['name'])
+    pn += 1
 
-    heights_list.append(players[h]['height'])
-    h +=1
+    heights_list.append(players[hl]['height'])
+    hl +=1
 
-    players_experience.append(players[e]['experience'])
-    e += 1
+    players_experience.append(players[pe]['experience'])
+    pe += 1
 
-    guardians_list.append(players[g]['guardians'])
-    g += 1
-    if g==18:
+    guardians_list.append(players[gl]['guardians'])
+    gl += 1
+    if gl==18:
         break  
 
 if option2 == '3':

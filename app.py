@@ -102,7 +102,6 @@ if __name__ == '__main__':
                     print('\nGuardians: ',', '.join(guardians_list))
                 
                 
-                
                 pn = 6
                 hl = 6
                 pe = 6
